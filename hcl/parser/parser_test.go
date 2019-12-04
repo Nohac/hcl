@@ -24,6 +24,7 @@ func TestType(t *testing.T) {
 		{token.FLOAT, `foo = 123.12`},
 		{token.FLOAT, `foo = -123.12`},
 		{token.BOOL, `foo = true`},
+		{token.IDENT, `foo = hello.dude()`},
 		{token.HEREDOC, "foo = <<EOF\nHello\nWorld\nEOF"},
 	}
 
